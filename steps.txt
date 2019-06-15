@@ -1,0 +1,8 @@
+git clone <linkr_rep>
+cd <rep_folder>
+<make changes>
+git add .
+git commit -m "Description"
+git push
+
+rm -r <folder_path>
