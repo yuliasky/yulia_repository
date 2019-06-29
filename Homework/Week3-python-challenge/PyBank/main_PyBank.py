@@ -76,7 +76,7 @@ with open(budget_csv, 'r') as csvfile:
 
 file = './output_budget.txt'
 
-# Open the file in "read" mode ('r') and store the contents in the variable "text"
+# Open the file in "write" mode ('w') and store the contents in the variable "text"
 with open(file, 'w') as text:
 	text.write("Financial Analysis")
 	text.write('\n' + "----------------------------")
