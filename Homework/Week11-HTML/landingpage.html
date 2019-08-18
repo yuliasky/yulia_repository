@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LandingPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-latest.js"></script> 
+  <script src="main.js"></script>
+ 
+</head>
+<body >
+    <header>
+    <nav>
+      <div class = "container-wholescreen">
+      <div class="d-flex flex-column font-weight-normal flex-md-row align-items-center p-0 px-md-5 mb-0 bg-white ">
+        <h6 class="mr-md-auto btn-lg block-Lat" href="landingpage.html">Home</h6>
+        <nav class="my-2 my-md-0 mr-md-3 navbar">
+            <div class="p-3  dropdown text-navbar">
+                <button class="dropbtn">Plots
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                   <a class="dropdown-item" href="VisualizationTemp.html">Max Temperature</a>
+                   <a class="dropdown-item" href="VisualizationHumidity.html">Humidity</a> 
+                   <a class="dropdown-item" href="VisualizationCloudiness.html">Cloudiness</a> 
+                  <a class="dropdown-item" href="VisualizationWindSpeed.html">Wind Speed</a> 
+                </div>
+            </div> 
+          <a class="p-3 text-navbar" href="Comparisonpage.html">Comparison</a>
+          <a class="p-3  text-navbar" href="Data.html">Data</a>
+        </nav>
+      </div>
+     </div>
+    
+     <div class="container-smallscreen"> 
+        <nav class="navbar navbar-expand-md background-green navbar-dark">
+          
+          <a class="navbar-brand block-Lat" href="landingpage.html">Home</a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                      <a id="txt-header" class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Plots
+                      </a>
+                      <div class="dropdown-menu text-navbar">
+                          <div class="dropdown-content adjust">
+                         <a class="dropdown-item" href=VisualizationTemp.html">Max Temperature</a>
+                         <a class="dropdown-item" href="VisualizationHumidity.html">Humidity</a> 
+                         <a class="dropdown-item" href="VisualizationCloudiness.html">Cloudiness</a> 
+                         <a class="dropdown-item" href="VisualizationWindSpeed.html">Wind Speed</a> 
+                      </div>
+                  </div> 
+              </li>
+              <li class="nav-item">
+                <a id="txt-header" class="nav-link" href="Comparisonpage.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a id="txt-header" class="nav-link" href="Data.html">Data</a>
+              </li> 
+            </ul>
+          </div> 
+        </nav>
+      </div>
+      </header>
+      <div class="row background-box">
+        <br>
+        <br>
+      </div>
+      <div class="container-txt-fullscreen-1">
+      <div class="row background-box">
+          <div class="col-sm-7 mb-10 mb-md-0">
+            <div class="card location-card">
+              <div class="card-body">
+                <h1 class="card-title text-card">Summary: Latitude vs X. </h1>
+                <br>
+                <hr> 
+                <br>
+                  <img class="float-imag" src="Images_HW_Week_11/Latitude_vs_Temperature.png" alt="LatitudevsTemperature" width=400" height = "300"/>
+                  <p>
+                   The purpose of this project was to analize how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
+                   on over 500 cities.
+                 </p> 
+                 <br>
+                 <p>
+                   After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
+                   Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization
+                   created as part of the analysis, as well as explainations and descriptions of any trends and correlations witnessed.
+                 </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-6 mb-md-0">
+              <div class="card location-card">
+                <div class="card-body">
+                  <h1 class="card-title text-card">Visualization </h1>
+                  <br>
+                  <hr>
+                  <br>
+                  <a href="VisualizationTemp.html"><img class="float-imag-2" src="Images_HW_Week_11/Latitude_vs_Temperature.png"  alt="LatitudevsTemperature" width=180" height = "150"/></a>
+                  <a href="VisualizationHumidity.html"><img class="float-imag-2" src="Images_HW_Week_11/Latitude_vs_Humidity.png"  alt="LatitudevsHumidity" width=180" height = "150"/></a>
+                  <a href="VisualizationCloudiness.html"><img class="float-imag-2" src="Images_HW_Week_11/latitude_vs_cloudiness.png"  alt="LatitudevsCloudiness" width=180" height = "150"/></a>
+                  <a href="VisualizationWindSpeed.html"><img class="float-imag-2" src="Images_HW_Week_11/Latitude_vs_Windspeed.png"  alt="LatitudevsWindspeed" width=180" height = "150"/></a>
+                 </div> 
+               </div> 
+           </div> 
+           <br>
+          </div>
+        <div class="row background-box">
+            <div class="col-sm-12"></div>
+            <br>
+            <br>
+            <br>
+          </div>
+    </div>
+    <div class="container-txt-fullscreen-2">
+        <div class="row background-box">
+            <div class="col-sm-8">
+              <div class="card location-card">
+                <div class="card-body">
+                  <h3 class="card-title text-card">Summary: Latitude vs X. </h3>
+                  <br>
+                  <hr> 
+                  <br>
+                    <img class="float-imag-adjust" src="Images_HW_Week_11/Latitude_vs_Temperature.png" alt="LatitudevsTemperature" width=150" height = 150"/>
+                    <p>
+                     The purpose of this project was to analize how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
+                     on over 500 cities.
+                   </p> 
+                   <br>
+                   <p>
+                     After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
+                     Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization
+                     created as part of the analysis, as well as explainations and descriptions of any trends and correlations witnessed.
+                   </p>
+                   <br>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row background-box">
+            <div class="col-sm-12"></div>
+            <br>
+            <br>
+          </div>
+            <div class="row background-box">
+            <div class="col-sm-8 mb-5 mb-md-0">
+                <div class="card location-card">
+                  <div class="card-body">
+                    <h3 class="card-title text-card">Visualization </h3>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="VisualizationTemp.html"><img class="float-imag-2-adjust" src="Images_HW_Week_11/Latitude_vs_Temperature.png" alt="LatitudevsTemperature" width=140" height = "100"/></a>
+                    <a href="VisualizationHumidity.html"><img class="float-imag-2-adjust" src="Images_HW_Week_11/Latitude_vs_Humidity.png" alt="LatitudevsHumidity" width=140" height = "100"/></a>
+                    <a href="VisualizationCloudiness.html"><img class="float-imag-2-adjust" src="Images_HW_Week_11/latitude_vs_cloudiness.png" alt="LatitudevsCloudiness" width=140" height = "100"/></a>
+                    <a href="VisualizationWindSpeed.html"><img class="float-imag-2-adjust" src="Images_HW_Week_11/Latitude_vs_Windspeed.png" alt="LatitudevsWindspeed" width=140" height = "100"/></a>
+                   </div> 
+                 </div> 
+             </div> 
+             <br>
+            </div>
+          </div>
+          <div class="row background-box">
+              <div class="col-sm-12"></div>
+              <br>
+              <br>
+              <br>
+            </div>
+      </div>
+    </div>
+<div class="footer">
+    <h5>Copyright Coding Bootcamp 2019</h5>
+</div>
+</body>
