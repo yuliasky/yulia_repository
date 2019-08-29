@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MARS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script type="text/javascript" src="https://www.w3schools.com/lib/w3data.js"></script>
+  <script type="text/javascript" async src="https://www.theweather.com/wid_loader/207c19025454af9f9b8d13576ae36716"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Latest Mar News</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+
+    <!-- scrape_mars -->
+
+    <div class = "row">
+        <div class = "col-md-12">
+            <h2 class = "heading">{{scrape_results.news_title}}</h2>
+    </div>
+    <div class = "row">
+        <div class = "col-md-12">
+            <h5 class = "heading">{{scrape_results.news_p}}</h5>
+        </div>
+    </div>
+
+    <div class = "row">
+            <div class = "col-md-8">
+                <div class = "card-body">
+                    <h3 class="card-title text-card">Featured Mars Image </h3>
+                <br>
+                <a target="_blank" href="{{scrape_results.featured_image_url}}">
+                <img src="{{scrape_results.featured_image_url}}" alt="Image" height="180" width="95%" class="img-thumbnail">
+                </a>
+                <h3><em>{{scrape_results.featured_image_title}}</em></h3>
+                <p><em>{{scrape_results.featured_image_descrip}}</em></p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-6 mb-md-0">
+            <div class = "col-md-12">
+                <div class = "card-body">
+                            <h3 class="card-title text-card"> Current Weather on Mar</h3>
+                    </div>
+                        <p>{{scrape_results.mars_weather}}</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-6 mb-md-0">
+            <div class = "col-md-12">
+                <div class = "card-body">
+                        <h3 class="card-title text-card">  Mars Fact</h3>
+                        '<table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>Mars</th>    </tr>    <tr>      <th>Characteristic</th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th>Equatorial Diameter:</th>      <td>6,792 km</td>    </tr>    <tr>      <th>Polar Diameter:</th>      <td>6,752 km</td>    </tr>    <tr>      <th>Mass:</th>      <td>6.39 × 10^23 kg (0.11 Earths)</td>    </tr>    <tr>      <th>Moons:</th>      <td>2 (Phobos &amp; Deimos)</td>    </tr>    <tr>      <th>Orbit Distance:</th>      <td>227,943,824 km (1.38 AU)</td>    </tr>    <tr>      <th>Orbit Period:</th>      <td>687 days (1.9 years)</td>    </tr>    <tr>      <th>Surface Temperature:</th>      <td>-87 to -5 °C</td>    </tr>    <tr>      <th>First Record:</th>      <td>2nd millennium BC</td>    </tr>    <tr>      <th>Recorded By:</th>      <td>Egyptian astronomers</td>    </tr>  </tbody></table>'
+                        <h3 class="card-title text-card">  Mars vs Earth </h3>
+                        '<table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>Mars</th>      <th>Earth</th>    </tr>    <tr>      <th>Characteristic</th>      <th></th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th>Diameter:</th>      <td>6,779 km</td>      <td>12,742 km</td>    </tr>    <tr>      <th>Mass:</th>      <td>6.39 × 10^23 kg</td>      <td>5.97 × 10^24 kg</td>    </tr>    <tr>      <th>Moons:</th>      <td>2</td>      <td>1</td>    </tr>    <tr>      <th>Distance from Sun:</th>      <td>227,943,824 km</td>      <td>149,598,262 km</td>    </tr>    <tr>      <th>Length of Year:</th>      <td>687 Earth days</td>      <td>365.24 days</td>    </tr>    <tr>      <th>Temperature:</th>      <td>-153 to 20 °C</td>      <td>-88 to 58°C</td>    </tr>  </tbody></table>'
+                </div>  
+            </div>
+        </div>          
+            </div>
+    <div class = "row">
+    <div class="jumbotron text-center">
+        <div class = "col-md-12">
+                <h2 class = "heading" > Mar Hemispheres</h2> 
+        </div>
+        <br>
+        <br>
+    </div>
+
+    </div>
+    <div class = "row">
+        <div class = "col-md-6">
+        <article>
+            <a target="_blank" href="{{scrape_results.img_url_cerberus}}">
+            <img src="{{scrape_results.img_url_cerberus}}" alt="Image" height="100%" width="95%" class="img-thumbnail">
+            </a>
+            <h3><em>{{scrape_results.title_cerberus}}</em></h3>
+        </article>
+        </div>
+
+        <div class = "col-md-6">
+        <article>
+            <a target="_blank" href="{{scrape_results.img_url_schiaparelli}}">
+            <img src="{{scrape_results.img_url_schiaparelli}}" alt="Image" height="100%" width="95%" class="img-thumbnail">
+            </a>
+            <h3><em>{{scrape_results.title_schiaparelli}}</em></h3>
+        </article>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class = "row">
+        <div class = "col-md-6">
+        <article>
+            <a target="_blank" href="{{scrape_results.img_url_syrtis}}">
+            <img src="{{scrape_results.img_url_syrtis}}" alt="Image" height="100%" width="95%" class="img-thumbnail">
+            </a>
+            <h3><em>{{scrape_results.title_syrtis}}</em></h3>
+        </article>
+        </div>
+    
+        <div class = "col-md-6">
+        <article>
+            <a target="_blank" href="{{scrape_results.img_url_Valles}}">
+            <img src="{{scrape_results.img_url_Valles}}" alt="Image" height="100%" width="95%" class="img-thumbnail">
+            </a>
+            <h3><em>{{scrape_results.title_Valles}}</em></h3>
+        </article>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
